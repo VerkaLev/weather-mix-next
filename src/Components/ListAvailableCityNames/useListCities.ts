@@ -50,7 +50,11 @@ export const useListCities = ({
       setCities([]);
     } else {
       const fetchCities = async () => {
-        const data = await getAllAvailableCityNames(debouncedValue, locale);
+        const res = await fetch(
+          `/api/getCityNames?letters=${debouncedValue}&locale=${locale}`
+        );
+        if (!res.ok) throw new Error(`Request error: ${res.status}`);
+        const data = await res.json();
 
         setCities(data || []);
       };

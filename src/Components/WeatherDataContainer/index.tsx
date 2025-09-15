@@ -57,7 +57,7 @@ export default function WeatherDataContainer({
           : `/api/getWeather?lat=${lat}&lon=${lon}`;
 
       const res = await fetch(url);
-      if (!res.ok) throw new Error(`Ошибка запроса: ${res.status}`);
+      if (!res.ok) throw new Error(`Request error: ${res.status}`);
       const data = await res.json();
 
       if (type === 'current') {
