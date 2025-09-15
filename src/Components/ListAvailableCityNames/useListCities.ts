@@ -56,7 +56,7 @@ export const useListCities = ({
         if (!res.ok) throw new Error(`Request error: ${res.status}`);
         const data = await res.json();
 
-        setCities(data || []);
+        setCities(data.dataAvailableCityNames || []);
       };
       fetchCities();
     }
