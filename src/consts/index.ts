@@ -21,6 +21,21 @@ export const position = {
   'storm-night': 'center 48%',
 };
 
+export const bgColor = {
+  'sunny-day': '#6a85b8',
+  'sunny-night': '#0b1431',
+  'cloudy-day': ' #c9cedf',
+  'cloudy-night': '#41343d',
+  'mist-day': ' #ada290',
+  'mist-night': '#545e6a',
+  'rain-day': '#627368',
+  'rain-night': '#2f4636',
+  'snow-day': '#dae1e7',
+  'snow-night': '#69666a',
+  'storm-day': '#a7b1ae',
+  'storm-night': '#474e4e',
+};
+
 export const valenciaInfo = {
   name: 'Valencia',
   lat: 39.4699,

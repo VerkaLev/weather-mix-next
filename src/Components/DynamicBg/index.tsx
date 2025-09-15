@@ -1,17 +1,19 @@
 'use client';
 
 import { useContext } from 'react';
-import { position } from '@/consts';
+import { bgColor, position } from '@/consts';
 import { BgContext } from '@/Context/BgContext';
 
 export default function DinamycBg() {
   const { bg } = useContext(BgContext);
   const isNight = bg.includes('night');
   const bgPosition = position[bg];
+  const bgColorPrev = bgColor[bg];
   return (
     <>
       <div
         style={{
+          backgroundColor: bgColorPrev,
           backgroundImage: `url(/images/bg/bg-home-${bg}.webp)`,
           backgroundPosition: bgPosition,
         }}
