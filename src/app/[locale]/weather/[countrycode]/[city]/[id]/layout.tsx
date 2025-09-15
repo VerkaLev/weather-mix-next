@@ -2,19 +2,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { getTranslateCityName } from '@/api/getTranslateCityName';
 import NavPage from '@/Components/NavPage';
+import { MyLayoutProps } from '@/Types';
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: {
-    locale: string;
-    id: string;
-    countrycode: string;
-    city: string;
-  };
-}) {
+export default async function RootLayout({ children, params }: MyLayoutProps) {
   const { locale, id, countrycode } = params;
 
   const messages = await getMessages({ locale: locale });

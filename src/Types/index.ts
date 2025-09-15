@@ -1,5 +1,15 @@
 import { position } from '@/consts';
 
+export type MyLayoutProps = {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+    id: string;
+    countrycode: string;
+    city: string;
+  };
+};
+
 export type DataContextProviderPropsType = {
   children: React.ReactNode;
 };
