@@ -16,8 +16,8 @@ export default async function WeatherPage({
   searchParams,
   params,
 }: WeatherPagePropsType) {
-  const { lat, lon } = searchParams;
-  const { locale } = params;
+  const { lat, lon } = await searchParams;
+  const { locale } = await params;
   const latFin = lat ? parseFloat(lat) : valenciaInfo.lat;
   const lonFin = lon ? parseFloat(lon) : valenciaInfo.lon;
 

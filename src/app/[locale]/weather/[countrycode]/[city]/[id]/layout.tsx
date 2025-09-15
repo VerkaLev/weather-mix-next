@@ -5,7 +5,7 @@ import NavPage from '@/Components/NavPage';
 import { MyLayoutProps } from '@/Types';
 
 export default async function RootLayout({ children, params }: MyLayoutProps) {
-  const { locale, id, countrycode } = params;
+  const { locale, id, countrycode } = await params;
 
   const messages = await getMessages({ locale: locale });
   const initialCityName = await getTranslateCityName(id, locale);

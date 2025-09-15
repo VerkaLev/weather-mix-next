@@ -2,12 +2,12 @@ import { position } from '@/consts';
 
 export type MyLayoutProps = {
   children: React.ReactNode;
-  params: {
+  params: Promise<{
     locale: string;
     id: string;
     countrycode: string;
     city: string;
-  };
+  }>;
 };
 
 export type DataContextProviderPropsType = {
@@ -26,13 +26,13 @@ export type ThemeContaiterPropsType = {
 };
 
 export type WeatherPagePropsType = {
-  searchParams: {
+  searchParams: Promise<{
     lat: string;
     lon: string;
-  };
-  params: {
+  }>;
+  params: Promise<{
     locale: string;
-  };
+  }>;
 };
 
 export type GetSunsetSunrisePropsType = {
