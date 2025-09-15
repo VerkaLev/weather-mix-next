@@ -3,7 +3,6 @@
 import { useContext } from 'react';
 import { position } from '@/consts';
 import { BgContext } from '@/Context/BgContext';
-import Image from 'next/image';
 
 export default function DinamycBg() {
   const { bg } = useContext(BgContext);
@@ -11,18 +10,13 @@ export default function DinamycBg() {
   const bgPosition = position[bg];
   return (
     <>
-      <div className='absolute inset-0'>
-        <Image
-          src={`/images/bg/bg-home-${bg}.jpg`}
-          alt='Background'
-          fill
-          priority
-          className='object-cover'
-          style={{
-            objectPosition: bgPosition,
-          }}
-        />
-      </div>
+      <div
+        style={{
+          backgroundImage: `url(/images/bg/bg-home-${bg}.webp)`,
+          backgroundPosition: bgPosition,
+        }}
+        className={`absolute inset-0 bg-no-repeat bg-cover`}
+      />
 
       {isNight ? (
         <div
