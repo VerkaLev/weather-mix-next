@@ -1,0 +1,68 @@
+{
+  "MainHeader": {
+    "part_1": "Conoce el clima",
+    "part_2": "según ",
+    "part_3": "varias",
+    "part_4": "fuentes"
+  },
+  "MainInfoWeatherHeader": {
+    "line_1": "Valores promedio de",
+    "line_2": "fuente",
+    "final_1": "",
+    "final_2": "s",
+    "today": "hoy",
+    "lang": "es-ES",
+    "at": "a las",
+    "numMinutes": "2-digit",
+    "locale": "es",
+    "format": "dd/MM/yyyy, EEE"
+  },
+  "WeatherIndicators": {
+    "wind": "Viento",
+    "speed": "m/s",
+    "humidity": "Humedad",
+    "pressure": "Presión",
+    "mm": "mm",
+    "uv": "UV",
+    "sunrise": "Amanecer",
+    "sunset": "Atardecer"
+  },
+  "ReturnToNowButton": {
+    "now": "ahora"
+  },
+  "DataSource": {
+    "wind": "Viento",
+    "speed": "m/s",
+    "humidity": "Humedad",
+    "pressure": "Presión",
+    "mm": "mm",
+    "uv": "UV"
+  },
+  "BtnShowHourly": {
+    "temp_hours": "Temperatura horaria ",
+    "today": "hoy",
+    "format": "dd/LL/yyyy"
+  },
+  "BtnShowWeekly": {
+    "temp_week": "Temperatura semanal para",
+    "days": "días",
+    "day": "día"
+  },
+  "WeeklyForecast": {
+    "lang": "es-ES",
+    "wrong": "Algo salió mal . . ."
+  },
+  "HourlyForecast": {
+    "lang": "es-ES",
+    "numMinutes": "2-digit",
+    "wrong": "Algo salió mal . . ."
+  },
+  "NavPage": {
+    "Valencia": "Valencia"
+  },
+  "ListAvailableCityNames": {
+    "location": "Mi ubicación",
+    "errorLocation": "La geolocalización no es compatible con tu navegado",
+    "errorMessage": "Error de geolocalización: "
+  }
+}

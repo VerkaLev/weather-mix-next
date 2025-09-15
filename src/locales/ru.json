@@ -1,0 +1,68 @@
+{
+  "MainHeader": {
+    "part_1": "Узнай погоду",
+    "part_2": "согласно ",
+    "part_3": "разным",
+    "part_4": "источникам"
+  },
+  "MainInfoWeatherHeader": {
+    "line_1": "Средние показатели согласно",
+    "line_2": "источник",
+    "final_1": "у",
+    "final_2": "aм",
+    "today": "сегодня",
+    "lang": "ru-RU",
+    "at": "в",
+    "numMinutes": "2-digit",
+    "locale": "ru",
+    "format": "dd.MM.yyyy, EEE"
+  },
+  "WeatherIndicators": {
+    "wind": "Ветер",
+    "speed": "м/с",
+    "humidity": "Влажность",
+    "pressure": "Давление",
+    "mm": "мм",
+    "uv": "Ультрафиолет",
+    "sunrise": "Восход",
+    "sunset": "Закат"
+  },
+  "ReturnToNowButton": {
+    "now": "сейчас"
+  },
+  "DataSource": {
+    "wind": "Ветер",
+    "speed": "м/с",
+    "humidity": "Влажность",
+    "pressure": "Давление",
+    "mm": "мм",
+    "uv": "Ультрафиолет"
+  },
+  "BtnShowHourly": {
+    "temp_hours": "Температура воздуха по часам ",
+    "today": "сегодня",
+    "format": "dd.LL.yyyy"
+  },
+  "BtnShowWeekly": {
+    "temp_week": "Температура воздуха на",
+    "days": "дней",
+    "day": "день"
+  },
+  "WeeklyForecast": {
+    "lang": "ru-RU",
+    "wrong": "что-то пошло не так . . ."
+  },
+  "HourlyForecast": {
+    "lang": "ru-RU",
+    "numMinutes": "2-digit",
+    "wrong": "что-то пошло не так . . ."
+  },
+  "NavPage": {
+    "Valencia": "Валенсия"
+  },
+  "ListAvailableCityNames": {
+    "location": "Моё местоположение",
+    "errorLocation": "Геолокация не поддерживается вашим браузером",
+    "errorMessage": "Ошибка геолокации: "
+  }
+}

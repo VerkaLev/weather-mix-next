@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.theme-day {
+  --text-color: #000000;
+  --bg-color: #ffffff99;
+}
+
+.theme-night {
+  --text-color: #e2e2e2;
+  --bg-color: #71717ab3;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
