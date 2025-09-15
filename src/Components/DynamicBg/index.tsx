@@ -13,7 +13,7 @@ export default function DinamycBg() {
     <>
       <div className='absolute inset-0'>
         <Image
-          src={`/images/bg/bg-home-${bg}.webp`}
+          src={`/images/bg/bg-home-${bg}.jpg`}
           alt='Background'
           fill
           priority
