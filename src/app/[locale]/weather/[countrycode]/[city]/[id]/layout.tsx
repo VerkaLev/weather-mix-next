@@ -15,7 +15,7 @@ export default async function RootLayout({
     city: string;
   };
 }) {
-  const { locale, id, countrycode } = await params;
+  const { locale, id, countrycode } = params;
 
   const messages = await getMessages({ locale: locale });
   const initialCityName = await getTranslateCityName(id, locale);
