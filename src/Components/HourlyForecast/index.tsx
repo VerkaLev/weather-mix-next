@@ -29,6 +29,7 @@ export default function HourlyForecast({
     isShowBtnNextTemp,
     handleSelectHourClick,
     currentTime,
+    error,
   } = useHourlyPagination({
     timezone,
     selectedDate,
@@ -50,6 +51,7 @@ export default function HourlyForecast({
             className='grid grid-cols-7 w-[800px] h-[100px] bg-[var(--bg-color)]'
           >
             <HourlyContainer
+              error={error}
               actualData={actualData}
               currentTime={currentTime}
               handleSelectHourClick={handleSelectHourClick}
@@ -70,6 +72,7 @@ export default function HourlyForecast({
             className='flex flex-nowrap gap-10 min-w-max items-center h-[100px] bg-[var(--bg-color)]'
           >
             <HourlyContainer
+              error={error}
               actualData={averageHourlyWeather}
               currentTime={currentTime}
               handleSelectHourClick={handleSelectHourClick}

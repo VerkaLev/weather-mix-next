@@ -9,8 +9,17 @@ export default function WeeklyContainer({
   actualData,
   currentDate,
   handleSelectDayClick,
+  error,
 }: WeeklyContainerPropsType) {
   const t = useTranslations('WeeklyForecast');
+
+  if (error === 'noData') {
+    return (
+      <div className='col-start-1 col-span-7 content-center mx-auto '>
+        {t('wrong')}
+      </div>
+    );
+  }
 
   return (
     <>

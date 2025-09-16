@@ -10,6 +10,18 @@ export const useHourlyPagination = ({
   averageHourlyWeather,
   setSelectedHour,
 }: UseHourlyPaginationPropsType) => {
+  if (!averageHourlyWeather || averageHourlyWeather.length === 0) {
+    return {
+      actualData: [],
+      currentTime: '',
+      error: 'noData',
+      handleShowPrevTimeClick: () => {},
+      handleShowNextTimeClick: () => {},
+      isShowBtnPrevTemp: false,
+      isShowBtnNextTemp: false,
+      handleSelectHourClick: () => {},
+    };
+  }
   const time = useCurrentHour(timezone);
   const startTime = selectedDate ? '00:00' : time;
 

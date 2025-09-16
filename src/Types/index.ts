@@ -425,6 +425,10 @@ export type DataSourcePropsType = {
   isLast: boolean;
 };
 
+export type BtnClosePropsType = {
+  handleCloseSourceClick: () => void;
+};
+
 export type WeatherForecastPropsType = {
   dataWeeklyWeather: DataWeeklyWeatherType;
   dataHourlyWeather: DataFilteredHourlyWeatherType;
@@ -487,6 +491,7 @@ export type HourlyContainerPropsType = {
   actualData: AverageHourlyValuesType[];
   currentTime: string;
   handleSelectHourClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  error: string | undefined;
 };
 
 export type GetFormattedHourType = {
@@ -511,6 +516,7 @@ export type WeeklyContainerPropsType = {
   actualData: GetAverageWeeklyWeatherResultType;
   currentDate: string;
   handleSelectDayClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  error: string | undefined;
 };
 
 export type NavPagePropsType = {

@@ -18,7 +18,7 @@ export default function DataSource({
       } flex flex-col items-end w-full my-3`}
     >
       <div
-        className={`relative flex flex-col w-full space-y-[10px] p-2 ${bgColorAccent}`}
+        className={`relative flex flex-col w-full space-y-[12px] p-2 ${bgColorAccent}`}
       >
         <div className='flex justify-between'>
           {t('wind')}

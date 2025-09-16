@@ -10,6 +10,19 @@ export const useWeeklyPagination = ({
   setSelectedDate,
   setSelectedHour,
 }: UseWeeklyPaginationPropsType) => {
+  if (!averageWeeklyWeather || averageWeeklyWeather.length === 0) {
+    return {
+      actualData: [],
+      currentDate: '',
+      error: 'noData',
+      handleShowPrevDateClick: () => {},
+      handleShowNextDateClick: () => {},
+      isShowBtnPrevDate: false,
+      isShowBtnNextDate: false,
+      handleSelectDateClick: () => {},
+    };
+  }
+
   const { currentDate } = useCurrentDate(timezone);
 
   let indexOfDate = averageWeeklyWeather.findIndex(

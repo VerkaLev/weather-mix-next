@@ -30,6 +30,7 @@ export default function WeeklyForecast({
     isShowBtnNextDate,
     handleSelectDateClick,
     currentDate,
+    error,
   } = useWeeklyPagination({
     timezone,
     averageWeeklyWeather,
@@ -51,6 +52,7 @@ export default function WeeklyForecast({
             className='grid grid-cols-7 w-[800px] h-[100px] bg-[var(--bg-color)]'
           >
             <WeeklyContainer
+              error={error}
               actualData={actualData}
               currentDate={currentDate}
               handleSelectDayClick={handleSelectDateClick}
@@ -70,6 +72,7 @@ export default function WeeklyForecast({
             className='flex flex-nowrap gap-10 min-w-max items-center h-[100px] bg-[var(--bg-color)]'
           >
             <WeeklyContainer
+              error={error}
               actualData={averageWeeklyWeather}
               currentDate={currentDate}
               handleSelectDayClick={handleSelectDateClick}

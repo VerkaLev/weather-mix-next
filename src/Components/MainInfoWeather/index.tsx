@@ -82,7 +82,7 @@ export default function MainInfoWeather({
         />
       </div>
       <div
-        className={`flex justify-center col-span-1 sm:col-span-3 sm:row-span-2 lg:col-span-3 xl:col-span-4 lg:row-span-1 py-10 sm:py-0 border-b-3 sm:border-none ${borderAccent}`}
+        className={`flex justify-center col-span-1 sm:col-span-3 sm:row-span-2 lg:col-span-3 xl:col-span-4 lg:row-span-1 py-10 sm:py-0 border-b-3 mt-12 sm:mt-0 sm:border-none ${borderAccent}`}
       >
         <SourcesWeather dataWeather={dataWeather} />
       </div>

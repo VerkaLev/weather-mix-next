@@ -11,6 +11,7 @@ export default function HourlyContainer({
   actualData,
   currentTime,
   handleSelectHourClick,
+  error,
 }: HourlyContainerPropsType) {
   const { selectedDate } = useContext(DateContext);
   const t = useTranslations('HourlyForecast');
@@ -41,7 +42,7 @@ export default function HourlyContainer({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (actualData.length === 0) {
+  if (error === 'noData') {
     return (
       <div className='col-start-1 col-span-7 content-center mx-auto '>
         {t('wrong')}
